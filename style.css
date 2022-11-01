@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body {
+    background-color: #f5e5c4;
+}
+
 /* Header */
 .navbar {
     background-color: #e0d3b8;
@@ -33,33 +37,34 @@
     padding: 5px;
 }
 
-.fondo {
-    background-color: #f5e5c4;
-}
 
 /* Fin Carousel */
 
 /* Sector productos */
 
-.fondoprod {
-    background-color: wheat;
-}
+
 
 .producto {
     display: flex;
     justify-content: center;
-    height: 250px;
+    height: 550px;
 }
 
 .remera {
-    transition: all 0,1s ease 0s;
+    box-shadow: 0 0 5px black;
 }
 
 .remera:hover {
-    background: transparent;
-    scale: (10);
+    transform: scale(1.1);
+    transition: all 0.9s ease 0s;
 }
 
+#cardTrabajos {
+    margin: 0 auto;
+    height: max-content;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
 
 /* Fin sector productos*/
@@ -68,8 +73,6 @@
 
 footer {
     width: 100%;
-    position: relative;
-    bottom: 100%;
     left: 0;
     padding: 2rem 8%;
     background-color: #e0d3b8;
@@ -109,3 +112,67 @@ li {
 }
 
 /* Fin footer*/
+
+@media screen and (min-width: 0px) and (max-width: 576px)
+{
+    .carousel-inner {
+        width: 500px;
+        height: 300px;
+        margin-left: -25%;
+    }
+    .fondo{
+        margin-bottom: 30px;
+        height: 350px;
+    }
+    .carousel-indicators {
+        margin-top: -30px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px)
+{
+    .carousel-inner {
+        width: 700px;
+        height: 360px;
+        margin-left: -25%;
+    }
+    .fondo{
+        margin-bottom: 30px;
+        height: 350px;
+    }
+    .carousel-indicators {
+        margin-top: -30px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px)
+{
+    .carousel-inner {
+        width: 900px;
+        height: 500px;
+        margin-left: -25%;
+    }
+    .fondo{
+        margin-bottom: 150px;
+        height: 350px;
+    }
+    .carousel-indicators {
+        margin-top: -30px;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px)
+{
+    .carousel-inner {
+        width: 1100px;
+        height: 700px;
+        margin-left: -25%;
+    }
+    .fondo{
+        margin-bottom: 350px;
+        height: 350px;
+    }
+    .carousel-indicators {
+        margin-top: -30px;
+    }
+}
