@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+.navbar {
+    background-color: #e0d3b8;
+}
+
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #a69a81;
+}
+
+#fotonavbar {
+    padding-right: 10px;
+    width: 50px;
+}
+
+.nav-link {
+    color: #a69a81;
+}
+
+/* Fin Header */
+
+/* Carousel */
+
+.carousel {
+    display: grid;
+    margin-left: 25%;
+    padding: 5px;
+}
+
+.fondo {
+    background-color: #f5e5c4;
+}
+
+/* Fin Carousel */
+
+/* Sector productos */
+
+.fondoprod {
+    background-color: wheat;
+}
+
+.producto {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+}
+
+.remera {
+    transition: all 0,1s ease 0s;
+}
+
+.remera:hover {
+    background: transparent;
+    scale: (10);
+}
+
+
+
+/* Fin sector productos*/
+
+/* Footer */
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 100%;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #e0d3b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.iconos, .menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+.iconos {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #a69a81;
+    margin: 1rem;
+}
+
+.iconos:hover {
+    background-color: black;   
+}
+
+/* Fin footer*/

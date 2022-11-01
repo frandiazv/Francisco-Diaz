@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    height: 70px;
+    background-color: #eaccad;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: #B8926C;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+header nav a {
+    font-weight: 600;
+    padding-right: 30px;
+}
+
+h1 {
+    color: #B8926C;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 20px;
+}
+
+.foto-central img {
+    width: 1800px;
+    height: 440px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:38px;
+}
+
+.tres-fotos {
+    display: flex;
+    align-items: row;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+/* Esto no supe como realizarlo, poner los textos por debajo de las imagenes, probe con position, flexbox que ni siquiera habia que usarlo, busque en las clases y todo pero no lo encontre */
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+    background-color: #B8926C;
+    padding: 10px;
+}
+
+footer nav a {
+    color: black;
+    padding-left: 150px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
