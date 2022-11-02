@@ -7,6 +7,8 @@ body {
     background-color: #f5e5c4;
 }
 
+/* -------INICIO INDEX-------*/
+
 /* Header */
 .navbar {
     background-color: #e0d3b8;
@@ -112,6 +114,8 @@ li {
 }
 
 /* Fin footer*/
+
+/* -------FIN INDEX-------*/
 
 @media screen and (min-width: 0px) and (max-width: 576px)
 {
