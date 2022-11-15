@@ -1,7 +1,26 @@
 section {
+  display: flex;
+  justify-content: center;
     div {
-      display: grid;
-      margin-left: 25%;
+      text-align: center;
       padding: 5px;
     }
+    div {
+      text-align: center;
+    }
+    .carousel-inner {
+      height: 600px;
+      @media screen and (min-width: 993px) and (max-width: 1200px) {
+          height: 500px;
+    }
+    @media screen and (min-width: 776px) and (max-width: 992px) {
+      height: 400px;
+    }
+    @media screen and (min-width: 576px) and (max-width: 775px) {
+      height: 300px;
+    }
+    @media screen and (min-width: 400px) and (max-width: 576px) {
+      height: 200px;
+    }
   }
+}

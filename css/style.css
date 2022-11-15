@@ -7,10 +7,39 @@ body {
   background-color: #f5e5c4;
 }
 
-.carousel {
-  display: grid;
-  margin-left: 25%;
+section {
+  display: flex;
+  justify-content: center;
+}
+section div {
+  text-align: center;
   padding: 5px;
+}
+section div {
+  text-align: center;
+}
+section .carousel-inner {
+  height: 600px;
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  section .carousel-inner {
+    height: 500px;
+  }
+}
+@media screen and (min-width: 776px) and (max-width: 992px) {
+  section .carousel-inner {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 775px) {
+  section .carousel-inner {
+    height: 300px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 576px) {
+  section .carousel-inner {
+    height: 200px;
+  }
 }
 
 footer {
@@ -27,7 +56,7 @@ footer img {
   height: 80px;
   margin-bottom: 1rem;
 }
-footer div a {
+footer div a img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +68,7 @@ footer div a {
   border: 1px solid #a69a81;
   margin: 1rem;
 }
-footer div a:hover {
+footer div a img:hover {
   background-color: black;
 }
 footer ul {
@@ -53,62 +82,6 @@ footer ul li {
   list-style: none;
 }
 
-@media screen and (min-width: 0px) and (max-width: 576px) {
-  .carousel-inner {
-    width: 500px;
-    height: 300px;
-    margin-left: -25%;
-  }
-  .fondo {
-    margin-bottom: 30px;
-    height: 350px;
-  }
-  .carousel-indicators {
-    margin-top: -30px;
-  }
-}
-@media screen and (min-width: 577px) and (max-width: 768px) {
-  .carousel-inner {
-    width: 700px;
-    height: 360px;
-    margin-left: -25%;
-  }
-  .fondo {
-    margin-bottom: 30px;
-    height: 350px;
-  }
-  .carousel-indicators {
-    margin-top: -30px;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 992px) {
-  .carousel-inner {
-    width: 900px;
-    height: 500px;
-    margin-left: -25%;
-  }
-  .fondo {
-    margin-bottom: 150px;
-    height: 350px;
-  }
-  .carousel-indicators {
-    margin-top: -30px;
-  }
-}
-@media screen and (min-width: 993px) and (max-width: 1200px) {
-  .carousel-inner {
-    width: 1100px;
-    height: 700px;
-    margin-left: -25%;
-  }
-  .fondo {
-    margin-bottom: 350px;
-    height: 350px;
-  }
-  .carousel-indicators {
-    margin-top: -30px;
-  }
-}
 header nav {
   background-color: #e0d3b8;
 }
@@ -121,25 +94,54 @@ header nav div a img {
   padding-right: 10px;
   width: 50px;
 }
+header nav div .navbar-brand {
+  color: #a69a81;
+}
 header nav div div ul li a {
   color: #a69a81;
 }
 
-section {
+.producto {
   display: flex;
   justify-content: center;
-  height: 550px;
+  height: 100%;
+  width: 1400px;
 }
-section div div {
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .producto {
+    width: 1200px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .producto .row {
+    margin-top: 100px;
+  }
+}
+.producto .row #cardTrabajos {
+  margin: 25px;
   box-shadow: 0 0 5px black;
-  margin: 0 auto;
-  height: max-content;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  height: 450px;
+  width: 350px;
 }
-section div div:hover {
+.producto .row #cardTrabajos:hover {
   transform: scale(1.1);
   transition: all 0.9s ease 0s;
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .producto .row #cardTrabajos {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .producto .row #cardTrabajos {
+    margin: 10px;
+    width: 280px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .producto .row #cardTrabajos {
+    margin: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
