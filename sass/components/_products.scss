@@ -1,34 +1,50 @@
-.producto {
+.container {
   display: flex;
   justify-content: center;
-  height: 100%;
-  width: 1400px;
-  @media screen and (min-width: 1200px) and (max-width: 1400px) {
-    width: 1200px;
+  flex-wrap: wrap;
+  .card {
+    background-color: white;
+    width: 270px;
+    margin: 15px;
+    border-radius: 10px;
+    &:hover {
+      background-color: black;
+      cursor: pointer;
+      transform: scale(1.05);
+      transition: all 0.5s ease;
+      h2, p {
+        color: white;
+        transition: all 1s ease;
+      }
+    }
+    .card-image {
+      height: 280px;
+      margin-bottom: 15px;
+      background-size: cover;
+    }
+    .producto-1 {
+      background-image: url(/images/China-Apparel-Customized-Logo-Black-Open-Side-Zip-Oversize-T-Shirt.jpg);
+    }
+    .producto-2 {
+      background-image: url(/images/pantalon.png)
+    }
+    .producto-3 {
+      background-image: url(/images/a6aeb2812832d5d5495e6896c0ae2502.jpg);
+
+    }
   }
-  .row {
-    @media screen and (min-width: 768px) and (max-width: 991px) {
-      margin-top: 100px;
-    }
-    #cardTrabajos {
-      margin: 25px;
-      box-shadow: 0 0 5px black;
-      height: 450px;
-      width: 350px;
-      &:hover {
-        transform: scale(1.1);
-       transition: all 0.9s ease 0s;
-      }
-      @media screen and (min-width: 1200px) and (max-width: 1400px) {
-        width: 300px;
-      }
-      @media screen and (min-width: 992px) and (max-width: 1199px) {
-        margin: 10px;
-        width: 280px;
-      }
-      @media screen and (min-width: 768px) and (max-width: 991px) {
-        margin: 10px;
-      }
-    }
+  .card h2 {
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .card p {
+    color: black;
+    padding: 10px;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
   }
 }

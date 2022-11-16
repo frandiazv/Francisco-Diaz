@@ -1,0 +1,127 @@
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    .producto-container { 
+        .remera-producto {
+            margin: 50px;
+        }
+    }
+    div {
+        text-align: center;
+        margin: auto;
+        .talles-xs {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            text-decoration: none;
+            color: black;
+            margin: 15px;
+            background-color: white;
+            padding: 5px;
+            border-style: inset;
+            &:hover {
+                background-color: #a69a81;
+                color: white;
+                cursor: pointer;
+                transform: scale(1.05);
+                transition: all 0.5s ease;
+            }
+        }
+        .talles-s {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            text-decoration: none;
+            color: black;
+            margin: 15px;
+            background-color: white;
+            padding: 5px;
+            border-style: inset;
+            &:hover {
+                background-color: #a69a81;
+                color: white;
+                cursor: pointer;
+                transform: scale(1.05);
+                transition: all 0.5s ease;
+            }
+        }
+        .talles-m {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            text-decoration: none;
+            color: black;
+            margin: 15px;
+            background-color: white;
+            padding: 5px;
+            border-style: inset;
+            &:hover {
+                background-color: #a69a81;
+                color: white;
+                cursor: pointer;
+                transform: scale(1.05);
+                transition: all 0.5s ease;
+            }
+        }
+        .talles-l {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            text-decoration: none;
+            color: black;
+            margin: 15px;
+            background-color: white;
+            padding: 5px;
+            border-style: inset;
+            &:hover {
+                background-color: #a69a81;
+                color: white;
+                cursor: pointer;
+                transform: scale(1.05);
+                transition: all 0.5s ease;
+            }
+        }
+        .talles-xl {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            text-decoration: none;
+            color: black;
+            margin: 15px;
+            background-color: white;
+            padding: 5px;
+            border-style: inset;
+            &:hover {
+                background-color: #a69a81;
+                color: white;
+                cursor: pointer;
+                transform: scale(1.05);
+                transition: all 0.5s ease;
+            }
+        }
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        .agregar-carrito {
+         font-family: 'Montserrat', sans-serif;
+         font-weight: 500;
+         background-color: black;
+         color: white;
+         padding: 15px 20px;
+         display: block;
+         text-align: center;
+         margin: 20px 200px;
+         margin-top: 30px;
+         text-decoration: none;
+         &:hover {
+             background-color: green;
+             cursor: pointer;
+             transform: scale(1.05);
+             transition: all 0.5s ease;
+            }
+        }
+        .texto-de-producto {
+            margin: 25px;
+        }
+    }    
+}

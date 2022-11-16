@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .card {
+      background-color: white;
+      width: 270px;
+      margin: 15px;
+      border-radius: 15px;
+      &:hover {
+        background-color: black;
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: all 0.5s ease;
+        h2, p {
+          color: white;
+          transition: all 1s ease;
+        }
+      }
+      .card-image {
+        height: 280px;
+        margin-bottom: 15px;
+        background-size: cover;
+      }
+      .remeras {
+        background-image: url(/images/remeraparacat.jpg);
+      }
+      .pantalones {
+        background-image: url(/images/pantalonparacat.jpg)
+      }
+      .bermudas {
+        background-image: url(/images/bermudasparacat.jpg);
+      }
+      .zapatillas {
+        background-image: url(/images/zapatillasparacat.jpg);
+      }
+      .buzos {
+        background-image: url(/images/hoddieparacat.jpg);
+      }
+      .accesorios {
+        background-image: url(/images/gorrasparacat.jpg);
+      }
+      .camperas {
+        background-image: url(/images/camperasparacat.jpg);
+      }
+    }
+    .card h2 {
+      color: black;
+      padding: 10px;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .card p {
+      color: black;
+      padding: 10px;
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+    }
+  }

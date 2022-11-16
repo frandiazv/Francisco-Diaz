@@ -7,39 +7,11 @@ body {
   background-color: #f5e5c4;
 }
 
-section {
-  display: flex;
-  justify-content: center;
+section .slide {
+  margin-top: 10px;
 }
-section div {
-  text-align: center;
-  padding: 5px;
-}
-section div {
-  text-align: center;
-}
-section .carousel-inner {
-  height: 600px;
-}
-@media screen and (min-width: 993px) and (max-width: 1200px) {
-  section .carousel-inner {
-    height: 500px;
-  }
-}
-@media screen and (min-width: 776px) and (max-width: 992px) {
-  section .carousel-inner {
-    height: 400px;
-  }
-}
-@media screen and (min-width: 576px) and (max-width: 775px) {
-  section .carousel-inner {
-    height: 300px;
-  }
-}
-@media screen and (min-width: 400px) and (max-width: 576px) {
-  section .carousel-inner {
-    height: 200px;
-  }
+section div div div img {
+  height: 65vh;
 }
 
 footer {
@@ -101,47 +73,285 @@ header nav div div ul li a {
   color: #a69a81;
 }
 
-.producto {
+.container {
   display: flex;
   justify-content: center;
-  height: 100%;
-  width: 1400px;
+  flex-wrap: wrap;
 }
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
-  .producto {
-    width: 1200px;
-  }
+.container .card {
+  background-color: white;
+  width: 270px;
+  margin: 15px;
+  border-radius: 10px;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .producto .row {
-    margin-top: 100px;
-  }
+.container .card:hover {
+  background-color: black;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.5s ease;
 }
-.producto .row #cardTrabajos {
+.container .card:hover h2, .container .card:hover p {
+  color: white;
+  transition: all 1s ease;
+}
+.container .card .card-image {
+  height: 280px;
+  margin-bottom: 15px;
+  background-size: cover;
+}
+.container .card .producto-1 {
+  background-image: url(/images/China-Apparel-Customized-Logo-Black-Open-Side-Zip-Oversize-T-Shirt.jpg);
+}
+.container .card .producto-2 {
+  background-image: url(/images/pantalon.png);
+}
+.container .card .producto-3 {
+  background-image: url(/images/a6aeb2812832d5d5495e6896c0ae2502.jpg);
+}
+.container .card h2 {
+  color: black;
+  padding: 10px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.container .card p {
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+.container a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container .card {
+  background-color: white;
+  width: 270px;
+  margin: 15px;
+  border-radius: 15px;
+}
+.container .card:hover {
+  background-color: black;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+.container .card:hover h2, .container .card:hover p {
+  color: white;
+  transition: all 1s ease;
+}
+.container .card .card-image {
+  height: 280px;
+  margin-bottom: 15px;
+  background-size: cover;
+}
+.container .card .remeras {
+  background-image: url(/images/remeraparacat.jpg);
+}
+.container .card .pantalones {
+  background-image: url(/images/pantalonparacat.jpg);
+}
+.container .card .bermudas {
+  background-image: url(/images/bermudasparacat.jpg);
+}
+.container .card .zapatillas {
+  background-image: url(/images/zapatillasparacat.jpg);
+}
+.container .card .buzos {
+  background-image: url(/images/hoddieparacat.jpg);
+}
+.container .card .accesorios {
+  background-image: url(/images/gorrasparacat.jpg);
+}
+.container .card .camperas {
+  background-image: url(/images/camperasparacat.jpg);
+}
+.container .card h2 {
+  color: black;
+  padding: 10px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.container .card p {
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+.container a {
+  text-decoration: none;
+}
+
+.carrito-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.carrito-container .carrito img {
+  width: 200px;
+  padding: 50px;
+  display: block;
+  margin: auto;
+}
+.carrito-container .carrito h1 {
+  color: #a69a81;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+.carrito-container .carrito h2 {
+  color: #a69a81;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+.carrito-container .carrito a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 200px;
+  margin-top: 60px;
+  text-decoration: none;
+}
+.carrito-container .carrito a:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-container .producto-container .remera-producto {
+  margin: 50px;
+}
+.product-container div {
+  text-align: center;
+  margin: auto;
+}
+.product-container div .talles-xs {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  margin: 15px;
+  background-color: white;
+  padding: 5px;
+  border-style: inset;
+}
+.product-container div .talles-xs:hover {
+  background-color: #a69a81;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+.product-container div .talles-s {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  margin: 15px;
+  background-color: white;
+  padding: 5px;
+  border-style: inset;
+}
+.product-container div .talles-s:hover {
+  background-color: #a69a81;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+.product-container div .talles-m {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  margin: 15px;
+  background-color: white;
+  padding: 5px;
+  border-style: inset;
+}
+.product-container div .talles-m:hover {
+  background-color: #a69a81;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+.product-container div .talles-l {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  margin: 15px;
+  background-color: white;
+  padding: 5px;
+  border-style: inset;
+}
+.product-container div .talles-l:hover {
+  background-color: #a69a81;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+.product-container div .talles-xl {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  margin: 15px;
+  background-color: white;
+  padding: 5px;
+  border-style: inset;
+}
+.product-container div .talles-xl:hover {
+  background-color: #a69a81;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+.product-container div h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.product-container div h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.product-container div .agregar-carrito {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 200px;
+  margin-top: 30px;
+  text-decoration: none;
+}
+.product-container div .agregar-carrito:hover {
+  background-color: green;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+.product-container div .texto-de-producto {
   margin: 25px;
-  box-shadow: 0 0 5px black;
-  height: 450px;
-  width: 350px;
-}
-.producto .row #cardTrabajos:hover {
-  transform: scale(1.1);
-  transition: all 0.9s ease 0s;
-}
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
-  .producto .row #cardTrabajos {
-    width: 300px;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .producto .row #cardTrabajos {
-    margin: 10px;
-    width: 280px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .producto .row #cardTrabajos {
-    margin: 10px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
